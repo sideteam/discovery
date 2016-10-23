@@ -9,7 +9,9 @@ const parseForCollection = ( txt ) => {
 };
 
 const getMethods = url => new Promise( ( resolve, reject ) => {
-	return 1;
+	console.log( url );
+	if ( !url ) reject( 1 );
+	resolve( 0 );
 } );
 
 const getCollections = url => new Promise( ( resolve, reject ) => {
