@@ -7,11 +7,13 @@ Discovery is a simple node script aimed at getting specific `Meteor` information
 ### DONE:
 - Simple html/code getter
 - Collections
+
 ### TODO:
 - Unit-tests
 - Packages
 - Allow/Deny
 - Meteor.methods
+
 ### What we use:
 - ES6
 - Promises
