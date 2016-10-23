@@ -8,6 +8,10 @@ const parseForCollection = ( txt ) => {
 	return ret;
 };
 
+const getMethods = url => new Promise( ( resolve, reject ) => {
+	return 1;
+} );
+
 const getCollections = url => new Promise( ( resolve, reject ) => {
 	getMeteorHtml( url )
 	.then( ( res ) => {
@@ -17,4 +21,4 @@ const getCollections = url => new Promise( ( resolve, reject ) => {
 	.catch( reject );
 } );
 
-export { getCollections };
+export { getCollections, getMethods };
