@@ -1,5 +1,5 @@
-import { getMeteorHtml } from './get-html';
 import _ from 'lodash';
+import { getMeteorHtml } from './get-html';
 
 const parseForCollection = ( txt ) => {
 	const rawCollections = txt.match( /Mongo.Collection\("[a-zA-Z]+"\)/g );
