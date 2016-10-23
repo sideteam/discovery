@@ -2,7 +2,7 @@ import _ from 'lodash';
 import { getMeteorHtml } from './get-html';
 
 const parseForMeteorItem = ( txt, content ) => {
-	const rawCollections = txt.match( new RegExp( `${content}\\("[a-zA-Z]+"\\)`, 'g' ) );
+	const rawCollections = txt.match( new RegExp( `${content}\\("[a-zA-Z]+"`, 'g' ) );
 	const ret = _.map( rawCollections, rawCollection => rawCollection.split( '"' )[1] );
 	console.log( ret );
 	return ret;
